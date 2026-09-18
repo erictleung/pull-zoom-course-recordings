@@ -83,7 +83,6 @@ def run_scraper():
         context = p.chromium.launch_persistent_context(
             user_data_dir=str(USER_DATA_DIR),
             headless=False,  # Set to False so you can see the UI and handle SSO
-            channel="chrome",  # Uses local Google Chrome if installed; remove if using standard Chromium
             args=["--start-maximized"],
             no_viewport=True,
         )
